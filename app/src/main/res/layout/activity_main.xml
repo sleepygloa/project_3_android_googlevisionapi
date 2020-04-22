@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
+    android:padding="@dimen/content_padding"
     tools:context=".MainActivity">
 
     <TextView
@@ -21,5 +22,26 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/border_height"
         android:background="@color/border_color"></View>
+
+    <include
+        layout="@layout/main_analyze_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:id="@+id/upload_image"
+        android:layout_width="match_parent"
+        android:text="@string/upload_image"
+        android:layout_height="@dimen/button_height"
+        android:textSize="@dimen/title_size"
+        android:gravity="center"
+        android:background="@drawable/button_background"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/content_padding"
+        android:textStyle="bold"
+        />
+
 
 </LinearLayout>
