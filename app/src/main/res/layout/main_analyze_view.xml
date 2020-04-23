@@ -29,6 +29,7 @@
                 />
 
             <ImageView
+                android:id="@+id/uploaded_image"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/image_height"
                 android:scaleType="fitCenter"
